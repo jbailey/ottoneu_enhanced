@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
-  "name": "Ottoneu Notsuck",
-  "description": "Make ottoneu not suck..as much",
-  "version": "0.1",
+  "name": "Ottoneu Enhanced",
+  "description": "Add additional information and stats to ottoneu pages",
+  "version": "1.0",
 
   "content_scripts": [
     {
       "matches": ["http://ottoneu.fangraphs.com/*/setlineup*"],
       "css": ["ottoneu_notsuck.css"],
-      "js": ["jquery-1.9.1.min.js", "ottoneu_notsuck.js"], 
+      "js": ["jquery-1.9.1.min.js", "ottoneu_notsuck.js"],
       "run_at": "document_end"
     },
     {
@@ -23,5 +23,9 @@
       "run_at": "document_end"
     }
 
+  ],
+
+  "web_accessible_resources": [
+    "jquery-1.9.1.min.js"
   ]
 }

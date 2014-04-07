@@ -1,18 +1,18 @@
 function changeBatterTable(table) {
-  $(table).find('th').eq(4).after('<th scope="col" class="rgHeader" style="text-align:right;">P/G</th>');
+  $(table).find('th').eq(3).after('<th scope="col" class="rgHeader" style="text-align:right;">P/G</th>');
   // Hide column headers
-  $(table).find("thead th").eq(9).hide();
-  $(table).find("thead th").eq(10).hide();
-  $(table).find("thead th").eq(15).hide();
-  $(table).find("thead th").eq(19).hide();
-  $(table).find("thead th").eq(20).hide();
+  // $(table).find("thead th").eq(9).hide();
+  // $(table).find("thead th").eq(10).hide();
+  // $(table).find("thead th").eq(16).hide();
+  // $(table).find("thead th").eq(19).hide();
+  // $(table).find("thead th").eq(20).hide();
 
   $(table).find('tr').each(function() {
-    $(this).find('td').eq(9).hide();
-    $(this).find('td').eq(10).hide();
-    $(this).find('td').eq(15).hide();
-    $(this).find('td').eq(19).hide();
-    $(this).find('td').eq(20).hide();
+    // $(this).find('td').eq(9).hide();
+    // $(this).find('td').eq(10).hide();
+    // $(this).find('td').eq(16).hide();
+    // $(this).find('td').eq(19).hide();
+    // $(this).find('td').eq(20).hide();
   });
 }
 
