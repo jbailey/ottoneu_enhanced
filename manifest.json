@@ -7,18 +7,18 @@
 
   "content_scripts": [
     {
-      "matches": ["http://ottoneu.fangraphs.com/*/setlineup*"],
+      "matches": ["https://ottoneu.fangraphs.com/*/setlineup*"],
       "css": ["ottoneu_notsuck.css"],
       "js": ["jquery-1.9.1.min.js", "ottoneu_notsuck.js"],
       "run_at": "document_end"
     },
     {
-      "matches": ["http://www.fangraphs.com/fantasyleaders.aspx*"],
+      "matches": ["https://www.fangraphs.com/fantasyleaders.aspx*"],
       "js": ["jquery-1.9.1.min.js", "fantasyleaders.js"],
       "run_at": "document_end"
     },
     {
-      "matches": ["http://ottoneu.fangraphs.com/*/playercard*"],
+      "matches": ["https://ottoneu.fangraphs.com/*/playercard*"],
       "js": ["jquery-1.9.1.min.js", "playercards.js"],
       "run_at": "document_end"
     }

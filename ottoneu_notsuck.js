@@ -1,11 +1,11 @@
-var hittersTable = $("table[border='1']")[0];
-var pitchersTable = $("table[border='1']")[1];
+var hittersTable = $("table.batter")[0];
+var pitchersTable = $("table.pitcher")[0];
 $(hittersTable).attr("id", "hittersTable");
 $(pitchersTable).attr("id", "pitchersTable");
 
 // Add P/G to hitting table
 $(hittersTable).find("tr").eq(0).find("th").eq(1).attr('colspan', 13);
-$(hittersTable).find(".statHeaders").eq(0).append('<th class="notRounded">P/G</th>');
+$(hittersTable).find("tr.statHeaders").eq(0).append('<th class="notRounded">P/G</th>');
 
 // Add P/IP to pitching table
 $(pitchersTable).find("tr").eq(0).find("th").eq(1).attr('colspan', 12);
