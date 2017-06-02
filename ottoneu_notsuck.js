@@ -16,7 +16,7 @@ function round2(num) {
 }
 
 function calcPPG(row) {
-  strGames = $(row).find("td").eq(5).html();
+  strGames = $(row).find("td").eq(4).html();
   strPoints = $(row).find("td").eq(14).html();
 
   if(strPoints != null && strPoints.indexOf(',') != -1) {
